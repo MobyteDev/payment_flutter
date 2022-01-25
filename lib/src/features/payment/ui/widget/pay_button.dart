@@ -2,20 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
 
 class PayButton extends StatelessWidget {
-
   final String title;
   final Icon icon;
 
   final VoidCallback onPressed;
-  
 
-  const PayButton({required this.title, required this.icon, required this.onPressed,});
+  const PayButton({
+    required this.title,
+    required this.icon,
+    required this.onPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: OutlinedButton(
-        onPressed: () {},
         child: Row(
           children: [
             Text(title),
@@ -26,6 +27,7 @@ class PayButton extends StatelessWidget {
           ],
           mainAxisAlignment: MainAxisAlignment.center,
         ),
+        onPressed: () {},
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(Colors.blueGrey[100]),
           foregroundColor: MaterialStateProperty.all(Colors.blueAccent[700]),
