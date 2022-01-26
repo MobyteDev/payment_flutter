@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_credit_card/flutter_credit_card.dart';
 
 class PayButton extends StatelessWidget {
   final String title;
-  final Icon icon;
+  final Icon? icon;
 
   final VoidCallback onPressed;
 
   const PayButton({
+    Key? key,
     required this.title,
-    required this.icon,
+    this.icon,
     required this.onPressed,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
