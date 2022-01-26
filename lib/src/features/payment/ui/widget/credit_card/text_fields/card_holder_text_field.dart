@@ -16,7 +16,7 @@ class CardHolderTextField extends StatelessWidget {
         ),
         obscureText: false,
         inputFormatters: [
-          FilteringTextInputFormatter.allow(RegExp('[a-zA-Z\.\ ]')),
+          FilteringTextInputFormatter.allow(RegExp('[a-zA-Z. ]')),
         ],
       ),
     );

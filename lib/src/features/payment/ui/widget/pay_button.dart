@@ -27,7 +27,7 @@ class PayButton extends StatelessWidget {
           ],
           mainAxisAlignment: MainAxisAlignment.center,
         ),
-        onPressed: () {},
+        onPressed: onPressed,
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(Colors.blueGrey[100]),
           foregroundColor: MaterialStateProperty.all(Colors.blueAccent[700]),

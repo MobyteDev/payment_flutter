@@ -12,7 +12,6 @@ class ExpiredDateTextField extends StatelessWidget {
         decoration: const InputDecoration(
           labelText: 'Expired Date',
           hintText: 'XX/XX',
-          helperText: 'MONTH/YEAR',
           border: OutlineInputBorder(),
         ),
         maxLength: 4,

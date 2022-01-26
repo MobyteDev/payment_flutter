@@ -36,7 +36,7 @@ class PaymentPage extends StatelessWidget {
                 Icons.check_circle,
                 color: Colors.blueAccent,
               ),
-              onPressed: () {},
+              onPressed: () {print("object");},
             ),
             PayButton(
               title: 'Apple Pay',
